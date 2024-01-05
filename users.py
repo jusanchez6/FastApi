@@ -7,6 +7,8 @@ app = FastAPI()
 # uvicorn users:app --reload
 
 @app.get("/")
-
 async def users():
-    return "¡Hello users!"
+    return [{"name": "Julian", "surname": "Sanchez", "url": "https://julian.com"},
+            {"name": "Julian", "surname": "Sanchez", "url": "https://julian.com"},
+            {"name": "Julian", "surname": "Sanchez", "url": "https://julian.com"}]
+ 
